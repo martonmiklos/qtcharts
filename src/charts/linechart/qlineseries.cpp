@@ -46,7 +46,7 @@ QT_CHARTS_BEGIN_NAMESPACE
     \image examples_linechart.png
 
     Creating a basic line chart is simple:
-    \code
+    \coder
     QLineSeries* series = new QLineSeries();
     series->append(0, 6);
     series->append(2, 4);

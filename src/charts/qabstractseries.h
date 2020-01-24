@@ -64,7 +64,8 @@ public:
         SeriesTypeHorizontalStackedBar,
         SeriesTypeHorizontalPercentBar,
         SeriesTypeBoxPlot,
-        SeriesTypeCandlestick
+        SeriesTypeCandlestick,
+        SeriesTypeLineMarker
     };
 
 protected:
@@ -85,8 +86,8 @@ public:
 
     QChart *chart() const;
 
-    bool attachAxis(QAbstractAxis *axis);
-    bool detachAxis(QAbstractAxis *axis);
+    virtual bool attachAxis(QAbstractAxis *axis);
+    virtual bool detachAxis(QAbstractAxis *axis);
     QList<QAbstractAxis*> attachedAxes();
 
     void show();
