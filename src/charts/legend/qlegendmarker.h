@@ -54,7 +54,8 @@ public:
         LegendMarkerTypePie,
         LegendMarkerTypeXY,
         LegendMarkerTypeBoxPlot,
-        LegendMarkerTypeCandlestick
+        LegendMarkerTypeCandlestick,
+        LegendMarkerTypeLineMarker
     };
 
     Q_PROPERTY(QString label READ label WRITE setLabel NOTIFY labelChanged)

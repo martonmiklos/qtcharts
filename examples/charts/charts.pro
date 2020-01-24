@@ -19,6 +19,7 @@ SUBDIRS += \
            legendmarkers \
            lineandbar \
            linechart \
+           linemarker \
            logvalueaxis \
            modeldata \
            multiaxis \

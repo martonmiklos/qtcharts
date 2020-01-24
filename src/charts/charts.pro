@@ -69,6 +69,7 @@ include($$PWD/xychart/xychart.pri)
 include($$PWD/layout/layout.pri)
 include($$PWD/boxplotchart/boxplotchart.pri)
 include($$PWD/candlestickchart/candlestickchart.pri)
+include($$PWD/marker/marker.pri)
 
 HEADERS += $$PUBLIC_HEADERS
 HEADERS += $$PRIVATE_HEADERS

@@ -4,6 +4,7 @@ SOURCES += \
     $$PWD/qlegend.cpp \
     $$PWD/legendlayout.cpp \
     $$PWD/qlegendmarker.cpp \
+    $$PWD/qlinemarkerlegendmarker.cpp \
     $$PWD/qpielegendmarker.cpp \
     $$PWD/legendmarkeritem.cpp \
     $$PWD/qbarlegendmarker.cpp \
@@ -21,6 +22,7 @@ PRIVATE_HEADERS += \
     $$PWD/legendmarkeritem_p.h \
     $$PWD/qpielegendmarker_p.h \
     $$PWD/qbarlegendmarker_p.h \
+    $$PWD/qlinemarkerlegendmarker_p.h \
     $$PWD/qxylegendmarker_p.h \
     $$PWD/qarealegendmarker_p.h \
     $$PWD/qboxplotlegendmarker_p.h \
@@ -31,7 +33,9 @@ PUBLIC_HEADERS += \
     $$PWD/qlegendmarker.h \
     $$PWD/qpielegendmarker.h \
     $$PWD/qbarlegendmarker.h \
+    $$PWD/qlinemarkerlegendmarker.h \
     $$PWD/qxylegendmarker.h \
     $$PWD/qarealegendmarker.h \
     $$PWD/qboxplotlegendmarker.h \
     $$PWD/qcandlesticklegendmarker.h
+
