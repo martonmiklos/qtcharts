@@ -42,6 +42,10 @@ QT_CHARTS_BEGIN_NAMESPACE
     \brief The QLineMarker class can be used to draw lines running parallel
     with one of the axes spanning the whole range of the parallel axis.
 
+    It could be used to create lines similar to the cursors
+    on oscilloscopes, or visualize a scalar limit for data displayed with
+    an anotother series.
+
     \image examples_linemarker.png
 
     Creating a basic line marker is simple:
@@ -56,6 +60,52 @@ QT_CHARTS_BEGIN_NAMESPACE
     \endcode
 */
 
+/*!
+    \qmltype LineMarker
+    \instantiates QLineMarker
+    \inqmlmodule QtCharts
+
+    \inherits QAbstractSeries
+
+    \brief Presents a vertical/horizontal line in line charts.
+
+    A line marker is used to draw a line parallel with some of the axes
+    to the charts. It could be used to create lines similar to the cursors
+    on oscilloscopes, or visualize a scalar limit for data displayed with
+    an anotother series.
+
+    The following QML example shows how to create a simple line chart:
+    \snippet qmlchart/qml/qmlchart/View2.qml 1
+    \beginfloatleft
+    \image examples_qmlchart2.png
+    \endfloat
+    \clearfloat
+*/
+
+/*!
+    \qmlproperty real LineMarker::width
+    The width of the marker. By default, the width is 2.0.
+*/
+
+/*!
+    \qmlproperty Qt::PenStyle LineMarker::style
+    Controls the style of the marker. Set to one of \l{Qt::NoPen}{Qt.NoPen},
+    \l{Qt::SolidLine}{Qt.SolidLine}, \l{Qt::DashLine}{Qt.DashLine}, \l{Qt::DotLine}{Qt.DotLine},
+    \l{Qt::DashDotLine}{Qt.DashDotLine}, or \l{Qt::DashDotDotLine}{Qt.DashDotDotLine}.
+    Using \l{Qt::CustomDashLine}{Qt.CustomDashLine} is not supported in the QML API.
+    By default, the style is Qt.SolidLine.
+
+    \sa Qt::PenStyle
+*/
+
+/*!
+    \qmlproperty Qt::PenCapStyle LineMarker::capStyle
+    Controls the cap style of the line. Set to one of \l{Qt::FlatCap}{Qt.FlatCap},
+    \l{Qt::SquareCap}{Qt.SquareCap} or \l{Qt::RoundCap}{Qt.RoundCap}. By
+    default the cap style is Qt.SquareCap.
+
+    \sa Qt::PenCapStyle
+*/
 
 /*!
     Constructs an empty marker object that is a child of \a parent and sets sets the default
